@@ -1,6 +1,6 @@
 # Law-Firm-Template
 
-### Part of a project during my Summer Internship,2019 at <a href="[https://kwd.com.kw/](https://kwd.com.kw/)"> DATA, Kuwait </a>
+### Part of a project during my Summer Internship,2019 at <a href="https://kwd.com.kw/"> DATA, Kuwait </a>
 
 Built using <a href="https://expressionengine.com/">Expression Engine</a>.
 
