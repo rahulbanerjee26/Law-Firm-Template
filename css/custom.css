@@ -1,0 +1,385 @@
+html,body,header,#home{
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+.black{
+    background: black;
+}
+
+#home{
+    background: url("../image/landingBanner.jpg") no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 0.6;
+}
+
+.landing-text {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    right: 25%;
+    color: white;
+    text-align: center;
+    font-family:  cursive;
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+.heading-para{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    right: 10%;
+    color: white;
+    opacity: 0;
+    animation: increaseOpacity 1s linear 2s;
+    animation-fill-mode: forwards;
+    text-align: center;
+    font-size: 3vw;
+}
+
+@keyframes increaseOpacity {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.animate-button{
+    position: absolute;
+    top: 65%;
+    left : 44%;
+}
+
+#about{
+    background: url("../image/about.png")  no-repeat center center fixed;
+    padding: 7%;
+    min-height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+}
+
+
+.about-header{
+    font-size: 2vw;
+    color: white;
+
+}
+
+.about-col-1,.about-col-2,.about-col-3{
+    padding: 1%;
+    background: #d4af37;
+    height: auto;
+}
+
+.about-col-2{
+    background: gray;
+}
+
+#services{
+    min-height : 100%;
+    background: url("../image/services.jpg") no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.service{
+    max-height: 80%;
+    overflow-y: hidden;
+    border: black solid 1px;
+    padding: 2%;
+    background: white;
+    opacity: 0.5;
+}
+
+.serv-header{
+    font-size: 2vw;
+    color: darkgoldenrod;
+}
+
+.service:hover{
+    opacity: 1;
+}
+
+#team{
+    background: url("../image/common.png")  no-repeat center center fixed;
+    padding: 7%;
+   height: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.team-member{
+    padding: 2%;
+}
+
+.team-member-info{
+    align-content: center;
+
+}
+
+.team-member-info >img{
+    opacity: 1;
+
+ }
+
+.team-member-info >img:hover{
+    opacity: 0.5;
+
+}
+
+.tem-member-text{
+    text-align: center;
+    margin-top: 2%;
+}
+
+#testimonial{
+    min-height: 100%;
+   background: url("../image/testimonial.jpg")  no-repeat center center scroll;
+    padding: 5%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+}
+
+#contact{
+    background: url("../image/common.png")  no-repeat center center fixed;
+    padding: 7%;
+    min-height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.contact-icons{
+    font-size: 2vw;
+    color: white;
+    padding: 2%;
+}
+
+#cases{
+    padding: 5%;
+    min-height: 100%;
+}
+
+ul.filters{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 30px 0;
+}
+
+ul.filters > li{
+    list-style: none;
+    display: inline-block;
+    color: white;
+}
+
+ul.filters > li > a{
+    display: block;
+    text-decoration: none;
+    padding: 5px 20px;
+    background: none;
+}
+
+ul.filters > li:hover{
+    background-color: teal;
+    cursor: pointer;
+}
+
+ul.filters > li.active{
+    color: #fff;
+    background-color: darkgoldenrod;
+}
+
+
+.box{
+    padding: 2%;
+}
+
+.card >img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.card> i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 34px;
+    color: black;
+}
+
+.card > img:hover{
+    opacity: 0.4;
+}
+
+.card > i{
+    transform: translate(-50%,-50%)  scale(0);
+    transition: all 0.5s linear 0s;
+}
+
+.card:hover i{
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.card{
+    position: relative;
+    color: #000;
+    background-color: #fff;
+    height: 100%;
+    width: auto;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding: 10%; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: relative;
+    top: 2%;
+    right: 2%;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+
+    .modal{
+        top: 10%;
+    }
+
+    .close{
+        top: 50%;
+        right: 50%;
+    }
+    .animate-button{
+        left: 31%;
+    }
+
+}
+
+#blog{
+    padding :5%;
+    min-height: 100%;
+}
+
+.blog-post{
+    position: relative;
+    align-content: center;
+    padding: 2%;
+    height: 100%;
+    text-align: center;
+}
+
+.blog-post >image{
+    alignment: center;
+    height: 30px!important;
+    width: 30px !important;
+    align-content: center;
+}
+
+.blog-post > div{
+    color: grey;
+    alignment: center;
+}
+
+.blog-post > h5{
+    color: darkgoldenrod;
+}
+
+#bookNow{
+    background: url("../image/common.png")  no-repeat center center fixed;
+    padding: 7%;
+    min-height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.lview{
+    background: url("../image/common.png")  no-repeat center center fixed;
+    padding: 7%;
+    min-height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*
+@media (max-width: 767px) {
+}
+Bootstrap defines the following widths
+
+Extra small devices (phones, less than 768px)
+Small devices (tablets, 768px and up)
+Medium devices (desktops, 992px and up)
+Large devices (large desktops, 1200px and up)
+ */
+
